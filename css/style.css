@@ -28,34 +28,44 @@
   padding: 10px 0; }
 
 .user-name__text {
-  float: left;
-  height: 20px; }
+  height: 20px;
+  display: inline-block;
+  position: relative; }
 
 .user-name__edit-button {
-  float: left;
-  margin-left: 10px;
+  position: absolute;
+  right: -30px;
+  top: 0;
   width: 20px;
   height: 20px;
   background: url("https://www.librarything.com/pics/edit-pencil.gif"); }
 
+.user-name__edit {
+  position: relative; }
+
 .user-name__edit-field {
-  float: left;
+  display: inline-block;
   height: 20px;
   padding: 0;
   border: 1px solid grey;
   width: 200px; }
 
 .user-name__confirm-button {
+  position: absolute;
+  right: -60px;
+  top: 0; }
+
+.confirm-button {
   text-align: center;
   border-radius: 6px;
   float: left;
+  display: inline-block;
   margin-left: 10px;
   width: 50px;
   height: 20px;
   border: 1px solid grey; }
 
 .confirm-button__text {
-  display: inline-block;
   vertical-align: middle; }
 
 .button-add-prof {
