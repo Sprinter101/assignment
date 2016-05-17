@@ -1,3 +1,7 @@
+BODY {
+		margin: 0;
+}
+
 .g-clearfix {
 	content: "";
 	display: table;
@@ -8,18 +12,19 @@
 	display: none;
 }
 
-.b-profile {
-	width: 100%;
-	margin: 0;
-	background-color: #fff;
+.main-page__profile {
+	width: 75%;
+	margin: 0 auto;
 }
 
-.b-profile__main-info {
+.profile {}
+
+.profile__main-info {
 	text-align: center;
 }
 
 .main-info {
-	border: 1px solid red;
+	//border: 1px solid red;
 	display: inline-block;
 }
 
@@ -53,11 +58,11 @@
 	background: url('https://www.librarything.com/pics/edit-pencil.gif');
 }
 
-.user-name__edit {
+.user-name__user-name-edit {
 	position: relative;
 }
 
-.user-name__edit-field {
+.user-name-edit__edit-field {
 	display: inline-block;
 	height: 20px;
 	padding: 0;
@@ -65,7 +70,7 @@
 	width: 200px;
 }
 
-.user-name__confirm-button {
+.user-name-edit__confirm-button {
 	position: absolute;
 	right: -60px;
 	top: 0;	
@@ -86,9 +91,7 @@
 	vertical-align: middle;
 }
 
-.main-info__button-add-prof {
-	
-}
+.main-info__button-add-prof {}
 
 .button-add-prof {
 	display: inline-block;
@@ -99,5 +102,4 @@
 }
 
 
-
-.b-profile__contacts {}
+.profile__contacts {}

@@ -4,5 +4,5 @@ var userNameToggleElements = function() {
 };
 
 
-$('.user-name__confirm-button').on('click', userNameToggleElements);
+$('.user-name-edit__confirm-button').on('click', userNameToggleElements);
 $('.user-name__edit-button').on('click', userNameToggleElements);
