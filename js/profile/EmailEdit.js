@@ -111,22 +111,11 @@ goog.scope(function() {
   EmailEdit.prototype.confirmButtonPressHandler_ = function() {
     var val_ = this.emailEditTextfield_.value.trim();
 
-    if (validateEmail(val_)) {
+    if (val_) {
       this.emailInfoText_.innerText = val_;
-
-      goog.dom.classlist.remove(
-        this.emailEditTextfield_,
-        EmailEdit.CssClass.INPUT_FIELD_ERROR
-      );
-
-      this.toggleEmailElements_(); 
-    } else {
-      goog.dom.classlist.add(
-        this.emailEditTextfield_,
-        EmailEdit.CssClass.INPUT_FIELD_ERROR
-      );
     }
-    
+
+    this.toggleEmailElements_(); 
   };
 
   EmailEdit.prototype.toggleEmailElements_ = function() {
@@ -153,10 +142,5 @@ goog.scope(function() {
       return;
     }
   };
-
-  var validateEmail = function(email) {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
-  }
 
 });
