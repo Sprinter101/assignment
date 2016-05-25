@@ -98,23 +98,6 @@ goog.scope(function() {
             );
         }
 
-        // if (this.hideShownFiltersButtonElement_) {
-        //     handler.listen(
-        //         this.hideShownFiltersButtonElement_,
-        //         goog.events.EventType.CLICK,
-        //         this.hideShownFilters_
-        //     );
-        // }
-
-        // if (this.showFiltersButtonElement_) {
-        //     var header = this.getElementByClass(Filter.CssClass.HEADER);
-        //     handler.listen(
-        //         header,
-        //         goog.events.EventType.CLICK,
-        //         this.toggleFiltersVisibility_
-        //     );
-        // }
-
         // for (var i = 0; i < this.inputElements.length; i++) {
         //     handler.listen(
         //         this.inputElements[i],

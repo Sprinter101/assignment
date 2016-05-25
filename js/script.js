@@ -1,5 +1,5 @@
 goog.require('profile.UserNameEdit');
-goog.require('profile.EmailEdit');
+goog.require('profile.EmailEdit'); 
 
 jQuery(function() {
 	var userNameElementsBlock = goog.dom.getElementByClass(

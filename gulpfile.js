@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var notify = require('gulp-notify');
-
+var exec = require('child_process').exec;
 
 
 var errorHandler = function (error) {
@@ -20,7 +20,15 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css/'));
 });
 
+gulp.task('calcdeps', function () {
+  exec('./calcdeps.sh', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+  });
+})
+
 
 gulp.task('watch', function () {
   gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch(['js/*', '!js/my-deps.js'], ['calcdeps']);
 });
