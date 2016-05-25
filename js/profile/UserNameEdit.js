@@ -98,13 +98,6 @@ goog.scope(function() {
             );
         }
 
-        // for (var i = 0; i < this.inputElements.length; i++) {
-        //     handler.listen(
-        //         this.inputElements[i],
-        //         goog.events.EventType.CLICK,
-        //         this.onChangeFilterItem
-        //     );
-        // }
     };
 
     UserNameEdit.prototype.toggleNameEditElements_ = function() {

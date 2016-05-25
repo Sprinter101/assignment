@@ -6,6 +6,9 @@
 .g-hidden {
   display: none; }
 
+.g-input-field-error {
+  outline: 2px solid red; }
+
 BODY {
   margin: 0; }
 
