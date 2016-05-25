@@ -137,7 +137,7 @@ goog.scope(function() {
       }
 
       if (key.keyCode == 27) {
-        this.toggleEmailElements_();
+        this.toggleNameElements_();
         return;
       }
     };

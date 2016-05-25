@@ -31,10 +31,12 @@ BODY {
 .main-info__user-name {
   padding: 10px 0; }
 
+.user-name {
+  position: relative; }
+
 .user-name__text {
   height: 20px;
-  display: inline-block;
-  position: relative; }
+  display: inline-block; }
 
 .user-name__edit-button {
   position: absolute;

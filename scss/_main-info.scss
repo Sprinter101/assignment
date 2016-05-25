@@ -20,10 +20,13 @@
 	padding: 10px 0;
 }
 
+.user-name {
+	position: relative;
+}
+
 .user-name__text {
 	height: 20px;
 	display: inline-block;
-	position: relative;
 }
 
 .user-name__edit-button {
