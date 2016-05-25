@@ -82,25 +82,42 @@ goog.scope(function() {
 
         var handler = this.getHandler();
 
-        if (this.nameInfoEditButton_) {
-            handler.listen(
-                this.nameInfoEditButton_,
-                goog.events.EventType.CLICK,
-                this.toggleNameEditElements_
-            );
-        }
+        handler.listen(
+          this.nameInfoEditButton_,
+          goog.events.EventType.CLICK,
+          this.editButtonPressHandler_
+        );
 
-        if (this.nameEditConfirmButton_) {
-            handler.listen(
-                this.nameEditConfirmButton_,
-                goog.events.EventType.CLICK,
-                this.toggleNameEditElements_
-            );
-        }
+        handler.listen(
+          this.nameEditConfirmButton_,
+          goog.events.EventType.CLICK,
+          this.confirmButtonPressHandler_
+        );
+
+        handler.listen(
+          this.nameEditTextfield_,
+          goog.events.EventType.KEYDOWN,
+          this.textfieldKeyPressHandler_
+        );
 
     };
 
-    UserNameEdit.prototype.toggleNameEditElements_ = function() {
+    UserNameEdit.prototype.editButtonPressHandler_ = function() {
+      this.nameEditTextfield_.value = this.nameInfoText_.innerText.trim();
+      this.toggleNameElements_();
+    };
+
+    UserNameEdit.prototype.confirmButtonPressHandler_ = function() {
+      var val_ = this.nameEditTextfield_.value.trim();
+
+      if (val_) {
+        this.nameInfoText_.innerText = val_;
+      }
+
+      this.toggleNameElements_(); 
+    };
+
+    UserNameEdit.prototype.toggleNameElements_ = function() {
     	goog.dom.classlist.toggle(
             this.nameInfoElements_,
             UserNameEdit.CssClass.HIDDEN
@@ -110,6 +127,19 @@ goog.scope(function() {
             this.nameEditElements_,
             UserNameEdit.CssClass.HIDDEN
         );
+    };
+
+    UserNameEdit.prototype.textfieldKeyPressHandler_ = function(key) {
+
+      if (key.keyCode == 13) {
+        this.confirmButtonPressHandler_();
+        return;
+      }
+
+      if (key.keyCode == 27) {
+        this.toggleEmailElements_();
+        return;
+      }
     };
 
 });
