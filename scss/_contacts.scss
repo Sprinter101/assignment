@@ -13,8 +13,18 @@
 	margin-top: 20px;
 }
 
-.user-email {
+.user-email__title {
+	display: inline-block;
 	position: relative;
+}
+
+.user-email__email {
+	margin-top: 10px;
+}
+
+.user-email-edit-elements {
+	position: relative;
+	margin-top: 10px;
 }
 
 .user-email__edit-button {

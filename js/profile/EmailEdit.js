@@ -9,7 +9,6 @@ goog.require('goog.ui.Component');
 profile.EmailEdit = function() {
   goog.base(this);
 
-  this.emailInfoElements_ = null;
   this.emailInfoText_ = null;
   this.emailInfoEditButton_ = null;
   this.emailEditElements_ = null;
@@ -24,14 +23,12 @@ goog.scope(function() {
 
   EmailEdit.CssClass = {
     USER_EMAIL_ELEMENTS_BLOCK: 'user-email',
-    EMAIL_INFO_ELEMENTS: 'js-user-email-info-elements',
     EMAIL_INFO_TEXT: 'user-email__email',
     EMAIL_INFO_EDIT_BUTTON: 'user-email__edit-button',
     EMAIL_EDIT_ELEMENTS: 'js-user-email-edit-elements',
     EMAIL_EDIT_TEXTFIELD: 'user-email-edit__edit-field',
     EMAIL_EDIT_CONFIRM_BUTTON: 'user-email-edit__confirm-button',
-    HIDDEN: 'g-hidden',
-    INPUT_FIELD_ERROR: 'g-input-field-error'
+    HIDDEN: 'g-hidden'
   };
 
   EmailEdit.prototype.createDom = function() {
@@ -46,11 +43,6 @@ goog.scope(function() {
 
   EmailEdit.prototype.decorateInternal = function(element) {
     goog.base(this, 'decorateInternal', element);
-
-    this.emailInfoElements_ = goog.dom.getElementByClass(
-        EmailEdit.CssClass.EMAIL_INFO_ELEMENTS,
-        element
-    );
 
     this.emailInfoText_ = goog.dom.getElementByClass(
         EmailEdit.CssClass.EMAIL_INFO_TEXT,
@@ -120,7 +112,7 @@ goog.scope(function() {
 
   EmailEdit.prototype.toggleEmailElements_ = function() {
     goog.dom.classlist.toggle(
-      this.emailInfoElements_,
+      this.emailInfoText_,
       EmailEdit.CssClass.HIDDEN
     );
 
