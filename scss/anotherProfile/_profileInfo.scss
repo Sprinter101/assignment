@@ -1,0 +1,54 @@
+.profile-info__user-avatar, .profile-info__user-name, .profile-info__user-profession {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.user-avatar {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.user-avatar__image {
+	border-radius: 50%;
+	border: 2px solid grey;
+	display: block;
+	width: 80px;
+	height: 80px
+}
+
+.user-avatar__trusted-count {
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	background-color: rgba(29, 29, 29, 0.62);
+	padding: 1px 10px;
+	border-radius: 30%;
+}
+
+.trusted-count__text {
+	font-size: 0.85rem;
+	color: white;
+}
+
+.user-name {
+	display: inline-block;
+}
+
+.user-profession {
+	display: inline-block;
+}
+
+.user-profession__icon {
+	//display: inline-block;
+	float: left;
+}
+
+.user-profession__icon-image {
+	display: block;
+}
+
+.user-profession__text {
+	display: inline-block;
+	color: green; 
+}

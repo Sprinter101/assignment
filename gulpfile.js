@@ -29,6 +29,6 @@ gulp.task('calcdeps', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch('scss/**', ['sass']);
   gulp.watch(['js/*', '!js/my-deps.js'], ['calcdeps']);
 });
