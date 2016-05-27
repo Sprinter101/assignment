@@ -1,6 +1,6 @@
-.g-clearfix {
+.g-clearfix:after {
   content: "";
-  display: table;
+  display: table !important;
   clear: both; }
 
 .g-hidden {
@@ -47,29 +47,36 @@ BODY {
   display: inline-block; }
 
 .user-profession__icon {
-  float: left; }
+  vertical-align: middle;
+  display: inline-block; }
+
+.user-profession__text {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: green; }
 
 .user-profession__icon-image {
   display: block; }
 
-.user-profession__text {
-  display: inline-block;
-  color: green; }
-
 .profile-icons {
   text-align: center;
   margin-top: 20px;
-  background-color: lightgrey;
-  height: 80px; }
+  background-color: #ECECEC;
+  padding: 5px 0; }
 
 .profile-icons__icon {
-  display: inline-block; }
+  display: inline-block;
+  width: 75px;
+  height: 60px;
+  background: center no-repeat; }
 
 .icon-trusted {
-  background: url(); }
+  background-image: url(../img/trusted_big.png); }
 
 .icon-profile {
-  background: url(); }
+  background-image: url(../img/profile_icon.png); }
 
 .profile-comments {
   margin-top: 5px; }

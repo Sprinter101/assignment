@@ -1,18 +1,21 @@
 .profile-icons {
 	text-align: center;
 	margin-top: 20px;
-	background-color: lightgrey;
-	height: 80px;
+	background-color: #ECECEC;
+	padding: 5px 0;
 }
 
 .profile-icons__icon {
 	display: inline-block;
+	width: 75px;
+	height: 60px;
+	background: center no-repeat;
 }
 
 .icon-trusted {
-	background: url();
+	background-image: url(../img/trusted_big.png);
 }
 
 .icon-profile {
-	background: url();
+	background-image: url(../img/profile_icon.png);
 }

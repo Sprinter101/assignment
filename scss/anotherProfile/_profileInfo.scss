@@ -40,15 +40,18 @@
 }
 
 .user-profession__icon {
-	//display: inline-block;
-	float: left;
+  	vertical-align: middle;
+	display: inline-block;
+}
+
+.user-profession__text {	
+  	vertical-align: middle;
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 1.2rem;	
+	color: green;	
 }
 
 .user-profession__icon-image {
 	display: block;
-}
-
-.user-profession__text {
-	display: inline-block;
-	color: green; 
 }

@@ -1,6 +1,6 @@
-.g-clearfix {
+.g-clearfix:after {
 	content: "";
-	display: table;
+	display: table !important;
 	clear: both;
 }
 
