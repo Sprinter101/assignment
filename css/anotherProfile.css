@@ -70,6 +70,7 @@ BODY {
   display: inline-block;
   width: 75px;
   height: 60px;
+  padding: 0 5px;
   background: center no-repeat; }
 
 .icon-trusted {
@@ -89,7 +90,7 @@ BODY {
   padding: 10px; }
 
 .comment-body {
-  margin-left: 104px; }
+  overflow: auto; }
 
 .comment-body__header {
   padding: 5px; }

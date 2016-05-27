@@ -12,8 +12,9 @@
 }
 
 .comment-body {
+	overflow: auto;
 	//border: 1px solid red;
-	margin-left: 104px;
+	//margin-left: 104px;
 }
 
 .comment-body__header {
