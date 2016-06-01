@@ -73,6 +73,9 @@ BODY {
   padding: 0 5px;
   background: center no-repeat; }
 
+.profile-icons__icon-incative {
+  opacity: 0.5; }
+
 .icon-trusted {
   background-image: url(../img/trusted_big.png); }
 
@@ -100,3 +103,17 @@ BODY {
 
 .comment-body__text {
   padding: 5px; }
+
+.profile__contacts {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px; }
+
+.user-mobile-number__number, .user-email__email {
+  margin-top: 10px; }
+
+.contacts {
+  font-size: 1.3rem; }
+
+.contacts__user-email {
+  margin-top: 20px; }

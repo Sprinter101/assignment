@@ -4,3 +4,7 @@ goog.addDependency("../../../js/userProfile/script.js", [], ['profile.UserNameEd
 goog.addDependency("../../../js/userProfile/my-deps.js", [], []);
 goog.addDependency("../../../js/userProfile/profile/EmailEdit.js", ['profile.EmailEdit'], ['goog.dom.classes', 'goog.dom.classlist', 'goog.events', 'goog.soy', 'goog.ui.Component']);
 goog.addDependency("../../../js/userProfile/profile/UserNameEdit.js", ['profile.UserNameEdit'], ['goog.dom.classes', 'goog.dom.classlist', 'goog.events', 'goog.soy', 'goog.ui.Component']);
+goog.addDependency("../../../js/anotherProfile/script.js", [], ['profile.UserNameEdit', 'profile.EmailEdit']);
+goog.addDependency("../../../js/anotherProfile/my-deps.js", [], []);
+goog.addDependency("../../../js/anotherProfile/profile/EmailEdit.js", ['profile.EmailEdit'], ['goog.dom.classes', 'goog.dom.classlist', 'goog.events', 'goog.soy', 'goog.ui.Component']);
+goog.addDependency("../../../js/anotherProfile/profile/UserNameEdit.js", ['profile.UserNameEdit'], ['goog.dom.classes', 'goog.dom.classlist', 'goog.events', 'goog.soy', 'goog.ui.Component']);
