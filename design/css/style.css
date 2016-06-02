@@ -1,4 +1,4 @@
-.g-hidden {
+.g-hiden {
 	display: none;
 }
 
@@ -61,43 +61,73 @@
 	right: 0;
 }
 
-.container {
+.cont {
 	margin: 20px;
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 	padding: 10px 0;
 	border-radius: 10px;
-	min-height: 400px;
 }
 
-.container__title {
+.cont--fixed-height {
+	height: 400px;
+}
+
+.cont__title {
 	font-family: Verdana;
 	font-size: 1.5rem;
 	text-align: center;	
 }
 
-.container__element {
-	margin: 10px 10px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+.cont__el {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Times New Roman";
+	margin: 10px 0;
+	border: 2px solid black;
 	padding: 5px;
 	border-radius: 10px;
+
 }
 
-.container__element--fixed-width {
+.cont__el--fixed-width {
 	width: 200px;
 }
 
-.container__element--fixed-height {
+.cont__el--width-15pc {
+	width: 15%;
+}
+
+.cont__el--width-20pc {
+	width: 20%;
+}
+
+.cont__el--width-25pc {
+	width: 25%;
+}
+
+.cont__el--width-40pc {
+	width: 40%;
+}
+
+.cont__el--width-75pc {
+	width: 75%;
+}
+
+.cont__el--fixed-height {
 	height: 200px;
 }
 
-.container--center-text {
+.cont--center-text {
 	text-align: center;
 }
 
-.container--justify-text {
+.cont--justify-text {
 	text-align: justify;
 }
 
-.container__element--vertical-align {
+.cont__el--vertical-align {
 	vertical-align: middle;
 }
