@@ -17,7 +17,7 @@ var errorHandler = function (error) {
 gulp.task('sass', function () {
   gulp.src('scss/*.scss')
     .pipe(sass()).on('error', errorHandler)
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('./build/css/'));
 });
 
 gulp.task('calcdeps', function () {
@@ -28,15 +28,19 @@ gulp.task('calcdeps', function () {
 })
 
 gulp.task('scripts', function() {   
+  var compile = false;
   var command = path.join(__dirname, 'node_modules/google-closure-library/closure/bin/build/closurebuilder.py');
-    command += ' --root="' + path.join(__dirname, 'src/') + '"';
+    command += ' --root="' + path.join(__dirname, 'app/blocks/') + '"';
     command += ' --root="' + path.join(__dirname, 'node_modules/google-closure-library/') + '"';
-    command += ' --namespace="tr.lUserProfile.userProfile"';
-    //command += ' --output_mode="script"'
-    command += ' --output_mode=compiled'
-    command += ' --compiler_jar=compiler.jar'
-    command += ' --compiler_flags="--compilation_level=ADVANCED_OPTIMIZATIONS"'
-    command += ' --output_file="' + path.join(__dirname, 'js/userProfile.js') + '"';
+    command += ' --namespace="fn.lProfile.Profile"';    
+    if(compile) {
+      command += ' --output_mode=compiled';
+      command += ' --compiler_jar=compiler.jar';
+      command += ' --compiler_flags="--compilation_level=ADVANCED_OPTIMIZATIONS"';
+    } else {
+      command += ' --output_mode="script"';
+    }
+    command += ' --output_file="' + path.join(__dirname, ' build/js/profile.js') + '"';
   exec(command);
 })
 
