@@ -32,10 +32,10 @@ gulp.task('scripts', function() {
     command += ' --root="' + path.join(__dirname, 'src/') + '"';
     command += ' --root="' + path.join(__dirname, 'node_modules/google-closure-library/') + '"';
     command += ' --namespace="tr.lUserProfile.userProfile"';
-    //command += ' --output_mode="script"'
-    command += ' --output_mode=compiled'
-    command += ' --compiler_jar=compiler.jar'
-    command += ' --compiler_flags="--compilation_level=ADVANCED_OPTIMIZATIONS"'
+    command += ' --output_mode="script"'
+    //command += ' --output_mode=compiled'
+    //command += ' --compiler_jar=compiler.jar'
+    //command += ' --compiler_flags="--compilation_level=ADVANCED_OPTIMIZATIONS"'
     command += ' --output_file="' + path.join(__dirname, 'js/userProfile.js') + '"';
   exec(command);
 })

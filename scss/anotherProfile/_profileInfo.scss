@@ -32,8 +32,44 @@
 }
 
 .user-name {
+	position: relative;
 	display: inline-block;
 }
+
+.user-name__edit-button {
+	position: absolute;
+	right: -30px;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background: $edit-button-picture;
+}
+
+.user-name__edit-field {
+	display: inline-block;
+	height: 20px;
+	padding: 0;
+	border: 1px solid grey;
+	width: 200px;
+}
+
+.user-name__confirm-button {
+	position: absolute;
+	right: -60px;
+	top: 0;	
+	text-align: center;
+	border-radius: 6px;
+	margin-left: 10px;
+	width: 50px;
+	height: 20px;
+	border: 1px solid grey;
+}
+
+.user-name__confirm-button-text {	
+	vertical-align: middle;
+}
+
+
 
 .user-profession {
 	display: inline-block;

@@ -1,4 +1,4 @@
-goog.provide('profile.UserNameEdit');
+goog.provide('tr.lProfile.UserNameEdit');
 
 goog.require('goog.dom.classes');
 goog.require('goog.dom.classlist');
@@ -6,7 +6,7 @@ goog.require('goog.events');
 goog.require('goog.soy');
 goog.require('goog.ui.Component');
 
-profile.UserNameEdit = function() {
+tr.lProfile.UserNameEdit = function() {
 	goog.base(this);
 
 	this.nameInfoElements_ = null;
@@ -17,10 +17,10 @@ profile.UserNameEdit = function() {
 	this.nameEditConfirmButton_ = null;
 };
 
-goog.inherits(profile.UserNameEdit, goog.ui.Component);
+goog.inherits(tr.lProfile.UserNameEdit, goog.ui.Component);
 
 goog.scope(function() {
-	var UserNameEdit = profile.UserNameEdit;
+	var UserNameEdit = tr.lProfile.UserNameEdit;
 
 	UserNameEdit.CssClass = {
 		USER_NAME_ELEMENTS_BLOCK: 'user-name',
@@ -32,16 +32,6 @@ goog.scope(function() {
 		NAME_EDIT_CONFIRM_BUTTON: 'user-name-edit__confirm-button',
 		HIDDEN: 'g-hidden'
   };
-
-  UserNameEdit.prototype.createDom = function() {
-    goog.base(this, 'createDom');
-
-    var element = goog.dom.getElementByClass('USER_NAME_ELEMENTS_BLOCK');
-
-    this.decorateInternal(element);
-  };
-
-
 
   UserNameEdit.prototype.decorateInternal = function(element) {
     goog.base(this, 'decorateInternal', element);

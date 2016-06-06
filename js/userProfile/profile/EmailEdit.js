@@ -32,6 +32,7 @@ goog.scope(function() {
   };
 
   EmailEdit.prototype.createDom = function() {
+
     goog.base(this, 'createDom');
 
     var element = goog.dom.getElementByClass('USER_EMAIL_ELEMENTS_BLOCK');
@@ -42,6 +43,7 @@ goog.scope(function() {
 
 
   EmailEdit.prototype.decorateInternal = function(element) {
+    console.log('HERE!');
     goog.base(this, 'decorateInternal', element);
 
     this.emailInfoText_ = goog.dom.getElementByClass(
